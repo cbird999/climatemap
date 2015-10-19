@@ -1,0 +1,183 @@
+// title style
+@titleFontColor: #005b96;
+@titleFontSize: 1.3em;
+// header style
+@headerFontColor: @titleFontColor;
+@headerFontSize: @titleFontSize;
+// body style
+@bodyFontColor: #555;
+@bodyFontSize: 1em;
+// toggle style
+@toggleFontColor: #ddd;
+@toggleFontSize: .9em;
+@toggleBarColor: @titleFontColor;
+@toggleBarActiveColor: #6497b1;
+//sidebar style
+@sidebarFontColor: #555;
+@sidebarFontSize: 1em;
+//legend style
+@legendFontColor: #555;
+@legendFontSize: .7em;
+//popup style
+@popupTitleFontSize: 1.4em;
+@popupTitleFontColor: @titleFontColor;
+@popupCloseButtonColor: #777;
+// legend style
+@legendFontSize: 0.8em;
+// layer style
+// states
+@statesFill: #ddd;
+@statesStroke: #fff;
+@statesStrokeHoverWidth: 3px;
+// disease
+@dengue0: #ddd;
+@dengue1: #fdae6b;
+@dengue2: #e6550d;
+// heat
+@heat0: #ddd;
+@heat1: #fb6a4a;
+@heat2: #de2d26;
+@heat3: #a50f15;
+// ozoneragweed
+@ozoneragweed0: #ddd;
+@ozoneragweed1: #9e9ac8;
+@ozoneragweed2: #756bb1;
+@ozoneragweed3: #54278f;
+// waterhigh
+@waterhigh0: #ddd;
+@waterhigh1: #6baed6;
+@waterhigh2: #3182bd;
+@waterhigh3: #08519c;
+// waterlow
+@waterlow: #ddd;
+@waterlow: #fd8d3c;
+@waterlow: #f03b20;
+@waterlow: #bd0026;
+
+#map1 {
+	min-height: 400px;
+}
+.states {
+	fill: @statesFill;
+	fill-opacity: 1;
+	stroke: @statesStroke;
+	stroke-opacity: .8;
+	stroke-width: 1px;
+	cursor: pointer;
+	pointer-events: all;
+	&.hover {
+		fill-opacity: 0;
+		stroke-width: @statesStrokeHoverWidth;
+	}
+}
+.map1-title {
+	.title-text {
+		color: @titleFontColor;
+		font-size: @titleFontSize;
+		margin: 25px 0;
+	}
+}
+.map1-toggle-menu {
+	background-color: @toggleBarColor;
+	text-align: center;
+	margin-bottom: 15px;
+	a {
+		color: @toggleFontColor;
+		font-size: @toggleFontSize;
+		display: inline-block;
+		margin-right: 30px;
+		text-decoration: none;
+		padding: 3px;
+		&:hover {
+			//padding: 10px;
+			background-color: @toggleBarActiveColor;
+		}
+	}
+	.active {
+		background-color: @toggleBarActiveColor;
+	}
+}
+.map1-sidebar {
+	.title h4 {
+		color: @headerFontColor;
+		font-size: @headerFontSize;
+	}
+	.body h5 {
+		color: @bodyFontColor;
+		font-size: @bodyFontSize;
+	}
+	.legend {
+		.legend-text {
+			color: @legendFontColor;
+			font-size: @legendFontSize;
+		}
+		i {
+			width: 12px;
+			height: 12px;
+			margin: 0 8px;
+			padding: 0px;
+			float: left;
+			opacity: .9;
+			color: #555;
+		}
+	}
+}
+.map1-main {
+	position: relative;
+	.map1-map-footer {
+		position: absolute;
+		bottom: 5px;
+		left: 5px;
+		color: #666;
+    font-size: 0.6em;
+		a {
+			text-decoration: none;
+		}
+	}
+}
+.tooltip {
+	background-color: #fff;
+	border: 1px solid #777;
+	border-radius: 3px;
+	font-size: 0.8em;
+	max-width: 300px;
+	min-width: 250px;
+	opacity: 0.9;
+	position: absolute;
+	box-shadow: 2px 2px 2px 2px #aaa;
+	a {
+		color: @popupCloseButtonColor;
+		display: block;
+    float: right;
+    font-size: 1.6em;
+    line-height: 0.5;
+    margin: 5px 5px 10px;
+	}
+}
+.popup-content-wrapper {
+	height: 200px;
+	margin: 15px 15px 0 0;
+	overflow: auto;
+	.popup-title {
+		text-align: center;
+	}
+	.popup-title h3 {
+		color: @popupTitleFontColor;
+		font-size: @popupTitleFontSize;
+		margin: 0 0 10px;
+		padding: 0;
+	}
+	.popup-content ul {
+		padding: 0 0 0 20px;
+		li {
+			color: #555;
+			margin: 3px 2px;
+		}
+	}
+}
+.indicator {
+	pointer-events: none;
+}
+.glyphicon.glyphicon-play {
+    padding-left: 3px;
+}

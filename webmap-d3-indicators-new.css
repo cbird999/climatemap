@@ -1,0 +1,122 @@
+#map1 {
+  min-height: 400px;
+}
+.states {
+  fill: #dddddd;
+  fill-opacity: 1;
+  stroke: #ffffff;
+  stroke-opacity: .8;
+  stroke-width: 1px;
+  cursor: pointer;
+  pointer-events: all;
+}
+.states.hover {
+  fill-opacity: 0;
+  stroke-width: 3px;
+}
+.map1-title .title-text {
+  color: #005b96;
+  font-size: 1.3em;
+  margin: 25px 0;
+}
+.map1-toggle-menu {
+  background-color: #005b96;
+  text-align: center;
+  margin-bottom: 15px;
+}
+.map1-toggle-menu a {
+  color: #dddddd;
+  font-size: 0.9em;
+  display: inline-block;
+  margin-right: 30px;
+  text-decoration: none;
+  padding: 3px;
+}
+.map1-toggle-menu a:hover {
+  background-color: #6497b1;
+}
+.map1-toggle-menu .active {
+  background-color: #6497b1;
+}
+.map1-sidebar .title h4 {
+  color: #005b96;
+  font-size: 1.3em;
+}
+.map1-sidebar .body h5 {
+  color: #555555;
+  font-size: 1em;
+}
+.map1-sidebar .legend .legend-text {
+  color: #555555;
+  font-size: 0.8em;
+}
+.map1-sidebar .legend i {
+  width: 12px;
+  height: 12px;
+  margin: 0 8px;
+  padding: 0px;
+  float: left;
+  opacity: .9;
+  color: #555;
+}
+.map1-main {
+  position: relative;
+}
+.map1-main .map1-map-footer {
+  position: absolute;
+  bottom: 5px;
+  left: 5px;
+  color: #666;
+  font-size: 0.6em;
+}
+.map1-main .map1-map-footer a {
+  text-decoration: none;
+}
+.tooltip {
+  background-color: #fff;
+  border: 1px solid #777;
+  border-radius: 3px;
+  font-size: 0.8em;
+  max-width: 300px;
+  min-width: 250px;
+  opacity: 0.9;
+  position: absolute;
+  box-shadow: 2px 2px 2px 2px #aaa;
+}
+.tooltip a {
+  color: #777777;
+  display: block;
+  float: right;
+  font-size: 1.6em;
+  line-height: 0.5;
+  margin: 5px 5px 10px;
+}
+.popup-content-wrapper {
+  height: 200px;
+  margin: 15px 15px 0 0;
+  overflow: auto;
+}
+.popup-content-wrapper .popup-title {
+  text-align: center;
+}
+.popup-content-wrapper .popup-title h3 {
+  color: #005b96;
+  font-size: 1.4em;
+  margin: 0 0 10px;
+  padding: 0;
+}
+.popup-content-wrapper .popup-content ul {
+  padding: 0 0 0 20px;
+}
+.popup-content-wrapper .popup-content ul li {
+  color: #555;
+  margin: 3px 2px;
+}
+.indicator {
+  pointer-events: none;
+}
+.glyphicon.glyphicon-play {
+  padding-left: 3px;
+}
+
+/* This beautiful CSS-File has been crafted with LESS (lesscss.org) and compiled by simpLESS (wearekiss.com/simpless) */
